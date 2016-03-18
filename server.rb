@@ -2,7 +2,7 @@ require 'pry'
 require 'socket'
 require 'erubis'
 require './connection'
-require './handlers/http'
+require './http'
 require './incoming'
 require './outgoing'
 

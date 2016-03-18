@@ -2,7 +2,7 @@ module Evented
   class Connection
     attr_reader :client, :response, :handler
 
-    def initialize(socket: nil, handler: Handlers::HTTP::Base.new)
+    def initialize(socket: nil, handler: HTTP::Handler.new)
       @client   = socket
       @handler  = handler
       @response = ""
