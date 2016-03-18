@@ -12,7 +12,7 @@ module Outgoing
     def headers
       {
         "Content-Type"   => "text/plain;\r\n",
-        "Content-Length" => "22\r\n"
+        "Content-Length" => "#{body.bytesize}\r\n"
       }
     end
 
